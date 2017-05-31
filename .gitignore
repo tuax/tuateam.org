@@ -1,0 +1,12 @@
+upload
+node_modules
+public/*
+*.log
+.DS_Store
+desktop.ini
+source/javascripts/template/*.js
+*.name
+.idea
+.idea/jsLibraryMappings.xml
+
+.vscode/settings.json
