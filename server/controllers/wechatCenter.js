@@ -13,7 +13,7 @@ var tools = require('../common/tools');
 var renderHelper = require('../common/render_helper');
 var cache = require('../common/cache');
 var wechatValidate = config.wechat_validate;
-var api = new WechatAPI(wechatValidate.appid, wechatValidate.encodingAESKey);
+var api = new WechatAPI(wechatValidate.appid, wechatValidate.AppSecret);
 
 exports.all = function(req, res, next) {
     // 路径为/wechat, 使用wechat_validate配置
@@ -161,20 +161,13 @@ exports.all = function(req, res, next) {
         res.reply('createMenu');
         var menu = {
             "button": [{
-                "name": "Tuateam",
-                "sub_button": [{
-                    "type": "view",
-                    "name": "Tuateam社区",
-                    "url": "http://tuateam.org/"
-                }, {
-                    "type": "view",
-                    "name": "GitHub",
-                    "url": "https://github.com/tuateam/"
-                }]
+                "type": "view",
+                "name": "TUAteam博客",
+                "url": "http://tuateam.org/"
             }, {
                 "type": "view",
-                "name": "招聘",
-                "url": "http://www.lagou.com/jobs/1715898.html"
+                "name": "GitHub",
+                "url": "https://github.com/tuateam/"
             }]
         };
         api.createMenu(menu, function(err, result) {
@@ -477,7 +470,7 @@ function getUserToken(options, callback) {
             json: true,
             qs: {
                 appid: wechatValidate.appid,
-                secret: wechatValidate.encodingAESKey,
+                secret: wechatValidate.AppSecret,
                 code: options.code,
                 grant_type: 'authorization_code'
             }

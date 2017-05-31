@@ -189,7 +189,8 @@ var config = {
     wechat_validate: {
         token: 'wechattuateam',
         appid: 'wx1e20ba6481ec1eec',
-        encodingAESKey: 'RFm4eypmKP0H7pl3SW2gP410xzwVPHbZYwKPMfnCTTb'
+        encodingAESKey: 'RFm4eypmKP0H7pl3SW2gP410xzwVPHbZYwKPMfnCTTb',
+        AppSecret: 'e3ff03dad5f8b39093cea952ef186a2e'
     },
     wechat_push_num: 1
 };
