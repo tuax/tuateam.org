@@ -152,7 +152,7 @@ body {
         }
     }
     .modules-list {
-            float: left;
+        float: left;
         height: 100%;
         max-width: 600px;
         list-style: none;
@@ -170,15 +170,11 @@ body {
             border-right: dashed 1px @ui-blue-light;
             .set-nav-list-item-link();
             &:hover {
-                background-color: @ui-blue-dark;
                 cursor: pointer;
             }
         }
         &-item:last-child {
             border-right: none;
-        }
-        &-item-active {
-            background-color: @ui-blue-dark;
         }
     }
     .user-sidebar {
@@ -255,19 +251,16 @@ body {
             }
             &:visited {
                 text-decoration: none;
-                color: @ui-white;
             }
             &:hover {
-                color: @ui-white;
+                color: @ui-blue-dark;
             }
         }
         &-active {
             & > a {
-                color: @ui-white;
-                &,
-                &:hover,
-                &:visited {
-                    color: @ui-white;
+                color: @ui-black;
+                &:hover{
+                    color: @ui-blue-dark;
                 }
             }
         }
@@ -362,7 +355,7 @@ body {
             background: 0 0;
             padding: 0;
             font-size: 16px;
-            border-bottom: 3px solid @ui-blue-dark;
+            border-bottom: 3px solid @ui-gray-light;
         }
         .col_fade {
             display: inline-block;
@@ -477,9 +470,10 @@ body {
                 font-size: 14px;
             }
             .panel-head-title {
-                font-size: 14px;
+                font-size: 20px;
                 padding: 9px 0 3px 20px;
                 display: block;
+                border-left: 0;
             }
             .topic-reply-num {
                 color: @ui-blue;
@@ -788,8 +782,7 @@ body {
         .topic-title {
             font-weight: normal;
             margin-top: 20px;
-            font-size: 24px;
-            border-left: 5px solid @ui-blue;
+            font-size: 32px;
             padding-left: 30px;
         }
         .cell-from {
@@ -1273,22 +1266,22 @@ textarea.editor {
 
 .topic-tab {
     color: @ui-btn-gray;
-    font-size: 12px;
-    padding: 10px;
+    font-size: 13px;
+    padding: 10px 8px;
     display: inline-block;
     &.margin-thin {
         margin-bottom: 5px;
     }
     &.current-tab {
-        background-color: @ui-blue;
-        border: 1px solid @ui-blue;
-        color: white;
+        background-color: #ededed;
+        border: 1px solid #ededed;
+        color: @ui-blue;
     }
     &:hover {
         text-decoration: none;
-        color: @ui-white;
-        background-color: @ui-blue;
-        border: 1px solid @ui-blue;
+        background-color: #ededed;
+        border: 1px solid #ededed;
+        color: @ui-blue;
     }
 }
 
@@ -1477,7 +1470,6 @@ textarea.editor {
     .btn-ico {
         float: left;
         cursor: pointer;
-        border: 1px solid rgba(0, 0, 0, 0);
         width: 30px;
         height: 30px;
         line-height: 30px;
@@ -1485,8 +1477,9 @@ textarea.editor {
         color: #b3b3b3;
         text-align: center;
         margin-left: 10px;
-        &:hover {
-            border: 1px solid #b3b3b3;
+        border: 1px solid #b3b3b3;
+        &.collected {
+            border-color: #fd4871;
         }
     }
 }

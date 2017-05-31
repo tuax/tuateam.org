@@ -240,7 +240,8 @@ exports.index = function(req, res, next) {
                     tab: tab,
                     issues: issues,
                     topic_caculate: topic_caculate,
-                    pageTitle: tabName && (tabName + '版块')
+                    pageTitle: tabName && (tabName + '版块'),
+                    showBanner: true
                 });
             });
     } else {
@@ -260,7 +261,8 @@ exports.index = function(req, res, next) {
                     tab: tab,
                     issues: issues,
                     topic_caculate: topic_caculate,
-                    pageTitle: tabName && (tabName + '版块')
+                    pageTitle: tabName && (tabName + '版块'),
+                    showBanner: true
                 });
             });
     }
@@ -824,7 +826,8 @@ exports.search = function(req, res, next) {
                     tab: tab,
                     issues: issues,
                     topic_caculate: topic_caculate,
-                    pageTitle: tabName && (tabName + '版块')
+                    pageTitle: tabName && (tabName + '版块'),
+                    showBanner: true
                 });
             });
     } else {
@@ -844,7 +847,8 @@ exports.search = function(req, res, next) {
                     tab: tab,
                     issues: issues,
                     topic_caculate: topic_caculate,
-                    pageTitle: tabName && (tabName + '版块')
+                    pageTitle: tabName && (tabName + '版块'),
+                    showBanner: true
                 });
             });
     }

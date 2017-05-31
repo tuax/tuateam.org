@@ -175,6 +175,7 @@
     <% if (typeof(global_banners) == 'undefined') {
         global_banners = []
     }%>
+    <% if (typeof(showBanner) !== 'undefined' && showBanner) { %>
     <div id="banner-container" class="banner-bg">
         <div id="banner">
 
@@ -201,6 +202,7 @@
 
         </div>
     </div>
+    <% } %>
 
     <!-- search bar -->
     <form class="form-horizontal search-form search-under-banner" name="responsiveSearchForm" action="/search" method="post">

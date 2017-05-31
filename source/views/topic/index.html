@@ -61,27 +61,6 @@
 
 <div id='content'>
   <div class='panel panel-border'>
-    <div class="topic-info">
-      <img class="ui-avatar ui-avatar-50 user-slider-btn js-identicon" src="<%= topic.author.avatar_url  %>"  data-name="<%= topic.author.loginname %>"/>
-      <div class="user-wrap">
-        <p class="user-name user-slider-btn" data-name="<%= topic.author.loginname %>"><%= topic.author.name || topic.author.loginname%></p>
-        <span class="ui-time"><i class="icon iconfont">&#xe605;</i><%= topic.friendly_create_at %></span>
-      </div>
-      <ul class="other-info">
-        <li>
-          <p><%= topic.visit_count %> </p>
-          <span>浏览</span>
-        </li>
-        <li>
-          <p class="topic-reply-count"><%= topic.reply_count %> </p>
-          <span>评论</span>
-        </li>
-        <li>
-          <p class="topic-collect-count"><%= topic.collect_count %></p>
-          <span>收藏</span>
-        </li>
-      </ul>
-    </div>
     <div class='header topic_header'>
       <h1 class="topic-title"><%- topic.title %></h1>
       <%if(topic.reprint){%>
@@ -120,17 +99,38 @@
         <% } %>
       </div>
     </div>
+    <div class="topic-info">
+      <img class="ui-avatar ui-avatar-50 user-slider-btn js-identicon" src="<%= topic.author.avatar_url  %>"  data-name="<%= topic.author.loginname %>"/>
+      <div class="user-wrap">
+        <p class="user-name user-slider-btn" data-name="<%= topic.author.loginname %>"><%= topic.author.name || topic.author.loginname%></p>
+        <span class="ui-time"><i class="icon iconfont">&#xe605;</i><%= topic.friendly_create_at %></span>
+      </div>
+      <ul class="other-info">
+        <li>
+          <p><%= topic.visit_count %> </p>
+          <span>浏览</span>
+        </li>
+        <li>
+          <p class="topic-reply-count"><%= topic.reply_count %> </p>
+          <span>评论</span>
+        </li>
+        <li>
+          <p class="topic-collect-count"><%= topic.collect_count %></p>
+          <span>收藏</span>
+        </li>
+      </ul>
+    </div>
     <div class='inner topic'>
       <div id="topic_content" class='topic_content'>
 
           <div class="markdown-text">
-              <blockquote>
-                  <p><span style="margin-left: 10px;">本文作者：tuateam <%= topic.author.name || topic.author.loginname %></span>
-                      <span style="margin-left: 10px;">原文出处：<a href="http://tuateam.org/topic/<%= topic._id %>">tuateam前端社区</a></span>
-                      <b style="margin-left: 10px;">未经同意，禁止转载</b>
-                      </p>
-              </blockquote>
               <%- markdownRender(topic.linkedContent) %>
+              <blockquote>
+              <p><span style="margin-left: 10px;">本文作者：tuateam <%= topic.author.name || topic.author.loginname %></span>
+                <span style="margin-left: 10px;">原文出处：<a href="http://tuateam.org/topic/<%= topic._id %>">tuateam前端社区</a></span>
+                <b style="margin-left: 10px;">未经同意，禁止转载</b>
+              </p>
+            </blockquote>
           </div>
 
       </div>
