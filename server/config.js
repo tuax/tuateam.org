@@ -72,8 +72,8 @@ var config = {
         port: 465,
         secureConnection: true,
         auth: {
-            user: '842280370@qq.com',
-            pass: 'ealftafabmidbdge'
+            user: '3454919700@qq.com',
+            pass: 'zyfwmrotcqoncgjd'
         }
     },
     //weibo app key
@@ -84,13 +84,14 @@ var config = {
     admins: {
         "test": true,  // 测试账号 发布删掉
         "shirly": true,
-        "pastest": true
+        "pastest": true,
+        "tuateam": true
     },
 
     // github 登陆的配置
     GITHUB_OAUTH: {
-        clientID: '940d0760a78fe50e1aaa',
-        clientSecret: '1305f00ba30f4eba3f9a9661ea9832ef16a6db68',
+        clientID: 'f3f0e2ea495a825f7d09',
+        clientSecret: '05b6c907faa2b72714f2795555c4ac4075ac03c8',
         callbackURL: 'http://tuateam.org/auth/github/callback'
     },
     //本地测试github
