@@ -219,6 +219,7 @@ function getArticle(options, callback) {
         limit: options.num,
         sort: options.sort
     };
+    var footContent = '<br> 想获取推荐文章链接，请猛戳下方的阅读原文！';
     Topic.getTopicsByQuery({}, opt, function(err, topics) {
         if (err) {
             return;
@@ -229,7 +230,7 @@ function getArticle(options, callback) {
             var count = 0;
             topics.forEach(function(topic, k) {
                 var coverUrl = tools.genTopicPic(topic.content);
-                var content = codeStyleAdd(renderHelper.markdown(topic.content));
+                var content = codeStyleAdd(renderHelper.markdown(topic.content + footContent));
                 var count0 = 0,
                     count1 = 0;
                 var transferUrl = [],
