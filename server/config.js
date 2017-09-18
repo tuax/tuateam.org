@@ -72,8 +72,8 @@ var config = {
         port: 465,
         secureConnection: true,
         auth: {
-            user: '3454919700@qq.com',
-            pass: 'zyfwmrotcqoncgjd'
+            user: 'xxx@qq.com',
+            pass: 'xxx'
         }
     },
     //weibo app key
@@ -91,13 +91,13 @@ var config = {
     // github 登陆的配置
     GITHUB_OAUTH: {
         clientID: 'f3f0e2ea495a825f7d09',
-        clientSecret: '05b6c907faa2b72714f2795555c4ac4075ac03c8',
+        clientSecret: 'xxx',
         callbackURL: 'http://tuateam.org/auth/github/callback'
     },
     //本地测试github
     TEST_GITHUB_OAUTH: {
         clientID: 'cb1872e84af2cb965cc8',
-        clientSecret: '097d8c85ac8a246abf7dafa94a0c4d78f95db506',
+        clientSecret: 'xxx',
         callbackURL: 'http://tuateam.org/auth/github/callback'
     },
     // 是否允许直接注册（否则只能走 github 的方式）
@@ -108,8 +108,8 @@ var config = {
 
     //7牛的access信息，用于文件上传
     qn_access: {
-        accessKey: 'Wvf2Lvxkb-QZQI9SBO2hvWHVexaTuUag8pjEl5Wh',
-        secretKey: 'TLEQ84z_8MPpvqZdvQGBQ13slizP_G76sCcUgp50',
+        accessKey: 'xxx',
+        secretKey: 'xxx',
         bucket: 'tuateam',
         domain: 'http://oqjublpec.bkt.clouddn.com',
         uploadURL: 'http://up-z1.qiniu.com'
@@ -183,15 +183,15 @@ var config = {
     topic_summary_len: 500,
     weibo: {
         appKey: '2157527702',
-        appSecret: '362673731270319b815dcde9e48797a5',
+        appSecret: 'xxx',
         authCallback: 'http://tuateam.org/auth/weibo/auth_back'
     },
     setting_binding_page: '/setting/binding',
     wechat_validate: {
         token: 'wechattuateam',
-        appid: 'wx1e20ba6481ec1eec',
-        encodingAESKey: 'RFm4eypmKP0H7pl3SW2gP410xzwVPHbZYwKPMfnCTTb',
-        AppSecret: 'e3ff03dad5f8b39093cea952ef186a2e'
+        appid: 'xxx',
+        encodingAESKey: 'xxx',
+        AppSecret: 'xxx'
     },
     wechat_push_num: 1
 };
